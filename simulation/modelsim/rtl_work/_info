@@ -1,0 +1,133 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/workspace/intel-fpga/ucs1903Ejemplo/simulation/modelsim
+Edata_shifter
+Z1 w1587412375
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/data_shifter.vhd
+Z8 FD:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/data_shifter.vhd
+l0
+L5
+VXFAI9Y4n9N>`[7mgHhD_;0
+!s100 S=hfnWd3[j>7E4j^nRMA^1
+Z9 OV;C;10.5b;63
+31
+Z10 !s110 1587412456
+!i10b 1
+Z11 !s108 1587412456.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/data_shifter.vhd|
+Z13 !s107 D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/data_shifter.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Adata_shifter_behavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 12 data_shifter 0 22 XFAI9Y4n9N>`[7mgHhD_;0
+l12
+L11
+V;OVm:m2d]EY`i>W=iDT_X3
+!s100 A6:8>RAIdnMFTFfa4zDN>2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Efrecuencies
+Z16 w1587408450
+R5
+R6
+R0
+Z17 8D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/frecuencies.vhd
+Z18 FD:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/frecuencies.vhd
+l0
+L4
+VNPEQkA<EKhMf3C5AbAQCD1
+!s100 EQkjPS^?A7h48^`UIS3RG0
+R9
+31
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-93|-work|work|D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/frecuencies.vhd|
+Z20 !s107 D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/frecuencies.vhd|
+!i113 1
+R14
+R15
+Afrecuencies_behavioral
+R5
+R6
+DEx4 work 11 frecuencies 0 22 NPEQkA<EKhMf3C5AbAQCD1
+l12
+L10
+V8<0>hS07e?]gk9HjlFoAG1
+!s100 lED?`d6NkG>bH6F7Nm]f[0
+R9
+31
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 1
+R14
+R15
+Emultiplexor
+Z21 w1587411173
+R5
+R6
+R0
+Z22 8D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/multiplexor.vhd
+Z23 FD:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/multiplexor.vhd
+l0
+L4
+V`0b3H:=HFUmEWzKWKBMK32
+!s100 ^OGRS[OJ^@UB34UI^QZ2;2
+R9
+31
+R10
+!i10b 1
+R11
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/multiplexor.vhd|
+Z25 !s107 D:/workspace/intel-fpga/ucs1903Ejemplo/vhdlCode/multiplexor.vhd|
+!i113 1
+R14
+R15
+Amultiplexor_behavioral
+R5
+R6
+DEx4 work 11 multiplexor 0 22 `0b3H:=HFUmEWzKWKBMK32
+l12
+L11
+V5odoX[eU>63GRbbJEKS>13
+!s100 7mhCUMjnWP`8=NPX:0HD]0
+R9
+31
+R10
+!i10b 1
+R11
+R24
+R25
+!i113 1
+R14
+R15

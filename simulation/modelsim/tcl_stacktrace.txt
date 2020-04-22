@@ -1,0 +1,10 @@
+Mon Apr 20 14:23:15 CDT 2020
+Trace back: bad window path name ""
+    while executing
+"winfo rootx $_w"
+    (procedure "Wave::ControlMouseWheel" line 3)
+    invoked from within
+"Wave::ControlMouseWheel .main_pane.wave.interior.cs.body.pw.wf.grid.row0,name.data 18 366 -120 "
+    (command bound to event)
+  <2:C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {bad window path name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {bad window path name ""}

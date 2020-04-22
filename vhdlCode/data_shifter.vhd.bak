@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity data_shifter is
+	port(
+	higthClock, slowClock, enabled: in std_logic;
+	SIN_UCS1903: out std_logic);
+end data_shifter;
+
+architecture data_shifter_behavioral of data_shifter is
+signal higthCount, slowCount: integer RANGE 0 TO 125;
+begin
+
+	process (clock, enabled) --shifter
+	begin
+	
+	end process;
+	
+	process (clock, enabled) -- multiplexor
+	begin
+	
+		
+	end process;
+	
+end data_shifter_behavioral;

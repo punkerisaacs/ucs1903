@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity multiplexor is
+	port(
+	higthClock, slowClock, reset: in std_logic;
+	data: in std_logic_vector(0 to 1) := "11";
+	UCS1903_data: in std_logic );
+end multiplexor;
+
+architecture multiplexor_behavioral of multiplexor is
+begin
+
+ CASE data IS
+	WHEN "00" => UCS1903_data <= slowClock;
+   WHEN "01" => UCS1903_data <= higthClock;
+   WHEN OTHERS => salida <= '0';
+ END CASE;
+
+end multiplexor_behavioral;

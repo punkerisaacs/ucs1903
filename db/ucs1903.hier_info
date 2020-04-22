@@ -1,0 +1,67 @@
+|ucs1903
+sin_ucs1903 <= multiplexor:inst8.UCS1903_data
+clock => frecuencies:inst.clock
+reset => frecuencies:inst.enabled
+r => data_shifter:inst3.r
+g => data_shifter:inst3.g
+b => data_shifter:inst3.b
+
+
+|ucs1903|multiplexor:inst8
+data[1] => Mux0.IN3
+data[0] => Mux0.IN2
+higthClock => Mux0.IN4
+slowClock => Mux0.IN5
+UCS1903_data <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ucs1903|frecuencies:inst
+clock => count[0].CLK
+clock => count[1].CLK
+clock => count[2].CLK
+clock => count[3].CLK
+clock => count[4].CLK
+clock => count[5].CLK
+clock => count[6].CLK
+clock => slowClock~reg0.CLK
+clock => higthClock~reg0.CLK
+clock => dataClock~reg0.CLK
+enabled => reset.DATAIN
+enabled => count[0].ACLR
+enabled => count[1].ACLR
+enabled => count[2].ACLR
+enabled => count[3].ACLR
+enabled => count[4].ACLR
+enabled => count[5].ACLR
+enabled => count[6].ACLR
+enabled => slowClock~reg0.ACLR
+enabled => higthClock~reg0.ACLR
+enabled => dataClock~reg0.ACLR
+dataClock <= dataClock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+higthClock <= higthClock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+slowClock <= slowClock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset <= enabled.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ucs1903|data_shifter:inst3
+r => Mux0.IN1
+g => Mux0.IN2
+b => Mux0.IN3
+dataClock => data[1]~reg0.CLK
+dataClock => data[0]~reg0.CLK
+dataClock => totalData[0].CLK
+dataClock => totalData[1].CLK
+dataClock => totalData[2].CLK
+dataClock => totalData[3].CLK
+dataClock => totalData[4].CLK
+enabled => data[1]~reg0.PRESET
+enabled => data[0]~reg0.PRESET
+enabled => totalData[0].ACLR
+enabled => totalData[1].ACLR
+enabled => totalData[2].ACLR
+enabled => totalData[3].ACLR
+enabled => totalData[4].ACLR
+data[1] <= data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[0] <= data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
